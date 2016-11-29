@@ -2,7 +2,7 @@
 
 ### What the API Playground Is
 
-The Best Buy API Playground is an API training tool for students, educators and other learners to explore the possibilities of a fully functional [RESTful API](http://www.restapitutorial.com/) in a simple, non-production environment. API Playground was developed by Best Buy and makes use of a [Creative Commons licensed](https://creativecommons.org/licenses/by-nc/4.0/) dataset including product and store-related information - making it easy for teaching APIs (both consumption and creation) to classrooms with realistic data. The playground supports full [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create Read Update Delete) operations for all API endpoints and does not require any external services nor databases.
+The Best Buy API Playground is an API training tool for students, educators and other learners to explore the possibilities of a fully functional [RESTful API](http://www.restapitutorial.com/) in a simple, non-production environment. API Playground was developed by Best Buy and makes use of a [Creative Commons licensed](https://creativecommons.org/licenses/by-nc/4.0/) dataset including over 50,000 products and store-related information - making it easy for teaching APIs (both consumption and creation) to classrooms with realistic data. The playground supports full [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create Read Update Delete) operations for all API endpoints and does not require any external services nor databases.
 
 **Please note: This system is for educational and training purposes only. It behaves differently than Best Buy's actual API, uses an older version of our catalog, and does not represent any real-world data.**
 
