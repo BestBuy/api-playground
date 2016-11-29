@@ -1,0 +1,69 @@
+{
+  "name": "apibox",
+  "description": "Best Buy API Playground",
+  "version": "1.0.0",
+  "homepage": "",
+  "main": "src/",
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "private": true,
+  "repository": {},
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 4.4.7"
+  },
+  "scripts": {
+    "test": "cp dataset.sqlite test/testdb.sqlite && npm run mocha && semistandard",
+    "start": "node src/",
+    "mocha": "NODE_ENV=test mocha test/ --recursive",
+    "dev": "nodemon",
+    "coverage": "nyc npm test",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "ajv": "^4.8.2",
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "degrees-radians": "^1.0.3",
+    "feathers": "^2.0.1",
+    "feathers-configuration": "^0.2.3",
+    "feathers-errors": "^2.4.0",
+    "feathers-hooks": "^1.5.4",
+    "feathers-rest": "^1.4.3",
+    "feathers-sequelize": "^1.3.3",
+    "feathers-socketio": "^1.4.1",
+    "marked": "^0.3.6",
+    "passport": "^0.3.2",
+    "radians-degrees": "^1.0.0",
+    "sequelize": "^3.24.8",
+    "serve-favicon": "^2.3.0",
+    "sqlite3": "^3.1.8",
+    "superagent": "^2.3.0",
+    "swagger-ui": "^2.2.6",
+    "swagger-ui-express": "^1.0.1",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.15",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.11.0",
+    "nyc": "^9.0.1",
+    "request": "^2.73.0",
+    "semistandard": "^8.0.0",
+    "supertest": "^2.0.1"
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": [
+      "src/middleware/swagger/swagger-ui",
+      "public/highlight.pack.js"
+    ]
+  }
+}

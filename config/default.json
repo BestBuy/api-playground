@@ -1,0 +1,6 @@
+{
+  "host": "localhost",
+  "name": "Best Buy API Playground",
+  "port": 3030,
+  "public": "../public/"
+}
