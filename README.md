@@ -1,5 +1,16 @@
 # Best Buy API Playground
 
+[![travis][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![semistandard][semistandard-image]][semistandard-url]
+
+[travis-image]: https://img.shields.io/travis/BestBuy/api-playground.svg?style=flat-square
+[travis-url]: https://coveralls.io/github/BestBuy/api-playground?branch=master
+[coveralls-image]: https://coveralls.io/repos/github/BestBuy/api-playground/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/BestBuy/api-playground?branch=master
+[semistandard-image]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square
+[semistandard-url]: http://npm.im/semistandard
+
 ### What the API Playground Is
 
 The Best Buy API Playground is an API training tool for students, educators and other learners to explore the possibilities of a fully functional [RESTful API](http://www.restapitutorial.com/) in a simple, non-production environment. API Playground was developed by Best Buy and makes use of a [Creative Commons licensed](https://creativecommons.org/licenses/by-nc/4.0/) dataset including over 50,000 products and store-related information - making it easy for teaching APIs (both consumption and creation) to classrooms with realistic data. The playground supports full [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create Read Update Delete) operations for all API endpoints and does not require any external services nor databases.
