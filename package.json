@@ -19,10 +19,9 @@
   "scripts": {
     "test": "cp dataset.sqlite test/testdb.sqlite && npm run mocha && semistandard",
     "start": "node src/",
-    "mocha": "NODE_ENV=test mocha test/ --recursive",
+    "mocha": "NODE_ENV=test nyc --cache mocha test/ --recursive --timeout=5000 --check-leaks",
     "dev": "nodemon",
-    "coverage": "nyc npm test",
-    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "ajv": "^4.8.2",
