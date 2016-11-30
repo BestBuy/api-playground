@@ -38,11 +38,25 @@ function renderMarkdown (req, res, next) {
 function htmlPage (md) {
   return `
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="none">
   <title>Best Buy - API Playground</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
 </head>
-
-${marked(md)}
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="twelve column">
+        ${marked(md)}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 `;
 }

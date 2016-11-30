@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="/darcula.css">
+<link rel="stylesheet" href="/css/darcula.css">
 <script src="/highlight.pack.js"></script>
 <script src="/libs/superagent/superagent.js"></script>
 
