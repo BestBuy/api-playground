@@ -35,4 +35,5 @@ The API can also be explored via a [Postman Collection](https://www.getpostman.c
 * [Sequelize](http://docs.sequelizejs.com/en/v3/)
 
 ### Attribution
-Zipcode data provided by [geonames.org](http://www.geonames.org/)
+* Zipcode data provided by [geonames.org](http://www.geonames.org/)
+* CSS provided by [Skeleton](http://getskeleton.com/)
