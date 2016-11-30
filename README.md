@@ -5,7 +5,7 @@
 [![semistandard][semistandard-image]][semistandard-url]
 
 [travis-image]: https://img.shields.io/travis/BestBuy/api-playground.svg?style=flat-square
-[travis-url]: https://coveralls.io/github/BestBuy/api-playground?branch=master
+[travis-url]: https://travis-ci.org/BestBuy/api-playground
 [coveralls-image]: https://coveralls.io/repos/github/BestBuy/api-playground/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/BestBuy/api-playground?branch=master
 [semistandard-image]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square
