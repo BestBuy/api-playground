@@ -47,6 +47,7 @@ function htmlPage (md) {
   <title>Best Buy - API Playground</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
   <div class="container">
