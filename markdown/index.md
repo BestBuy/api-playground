@@ -10,6 +10,8 @@ The Best Buy API Playground is a dataset of products, categories, and stores exp
 * [/categories](/categories) - All product categories and their subcategories/path.
 * [/stores](/stores) - A list of all Best Buy store locations.
 * [/services](/services) - A list of all services available at Best Buy stores.
+* [/version](/version) - Displays the current version of the application.
+* [/healthcheck](/healthcheck) - Displays the information about the application's health.
 
 ## Exploring the API
 

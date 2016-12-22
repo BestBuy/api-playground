@@ -1,7 +1,11 @@
+'use strict';
+
+var packageInfo = require('../../../package.json');
+
 module.exports = {
   'swagger': '2.0',
   'info': {
-    'version': '1.0.0',
+    'version': packageInfo.version,
     'title': 'Best Buy API Playground',
     'description': 'A sample dataset and API for you to experiment with.',
     'contact': {
@@ -36,6 +40,10 @@ module.exports = {
     {
       name: 'categories',
       description: 'Find, create, update and remove product categories'
+    },
+    {
+      name: 'utilities',
+      description: 'API application functionality for monitoring version and health information'
     }
   ],
   'paths': {

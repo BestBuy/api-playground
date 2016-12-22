@@ -5,10 +5,9 @@ const hooks = require('./hooks');
 
 module.exports = function () {
   const app = this;
-  const db = app.db;
 
   let options = {
-    Model: db.store,
+    Model: app.db.store,
     paginate: {
       default: 10,
       max: 25
