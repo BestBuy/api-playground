@@ -54,7 +54,16 @@ There are a few basic ground rules for collaborators:
 
 ## Releases
 
-Declaring formal releases remains the prerogative of the project maintainer.
+Declaring formal releases remains the prerogative of the project maintainer. Please avoid incrementing the version in package.json in pull requests.
+
+The person who merged the PR or another maintainer should follow these steps to increment the version:
+
+1. Ensure all reviewed/approved PRs are merged to `master` (this can be one or many PRs)
+1. pull down master locally.
+1. run `npm version patch|minor|major` (following the guidelines of [Semantic Versioning](http://semver.org/)).
+1. push the tag to Github: `git push --tags`
+
+Note that we do not currently publish to `npm`.
 
 ## Changes to this arrangement
 
