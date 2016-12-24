@@ -17,6 +17,7 @@ module.exports = function () {
     ]).then(dbValues => {
       res.send({
         uptime: process.uptime(),
+        readonly: app.get('readonly'),
         documents: {
           products: dbValues[0],
           stores: dbValues[1],

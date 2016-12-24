@@ -6,8 +6,24 @@ var request = require('supertest');
 var storesSchema = require('../../../src/services/stores/schema');
 
 describe('stores service', function () {
+  beforeEach(function (done) {
+    app.set('readonly', false);
+    done();
+  });
+
   it('registered the stores service', () => {
     assert.ok(app.service('stores'));
+  });
+
+  it('denies write attempts when in readonly mode', function (done) {
+    app.set('readonly', true);
+    request(app)
+      .post('/stores')
+      .expect(405)
+      .end(function (err, result) {
+        if (err) { assert.ifError(err); }
+        done();
+      });
   });
 
   it('honors required fields when validating', function (done) {
