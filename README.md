@@ -39,6 +39,13 @@ npm start
 
 Now open http://localhost:3030 in your browser to begin exploring the API. From there we'll guide you on using tools such as Swagger and Postman to get meaningful experience interacting with APIs.
 
+## Configuration Options
+
+Configuration settings are managed using [Feathers Configuration](https://docs.feathersjs.com/configuration/readme.html). The options
+that you may want to adjust, depending on your usage, are:
+* `port` - HTTP port where the API is listening. Defaults to 3030.
+* `readonly` - If true, database cannot be modified (i.e. create, update, patch & remove operations are disabled). Defaults to false.
+
 ## Things That Power the Playground
 
 Beyond all the great libraries (which are mentioned within the [package.json](package.json), such as [Sequelize](http://sequelizejs.com/)), here are some of the crucial components and resources that made assembling with API Playground possible:

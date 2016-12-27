@@ -9,10 +9,10 @@ exports.before = {
   all: [],
   find: [findNearby, includeAssociatedModels, findServiceByName, findServiceById, globalHooks.allowNull(), globalHooks.wildcardsInLike()],
   get: [includeAssociatedModels],
-  create: [validateSchema(storeSchema)],
-  update: [validateSchema(storeSchema)],
-  patch: [],
-  remove: []
+  create: [globalHooks.errorIfReadonly, validateSchema(storeSchema)],
+  update: [globalHooks.errorIfReadonly, validateSchema(storeSchema)],
+  patch: [globalHooks.errorIfReadonly],
+  remove: [globalHooks.errorIfReadonly]
 };
 
 exports.after = {

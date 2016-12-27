@@ -8,10 +8,10 @@ exports.before = {
   all: [],
   find: [globalHooks.allowNull(), globalHooks.wildcardsInLike()],
   get: [],
-  create: [validateSchema(serviceSchema)],
-  update: [validateSchema(serviceSchema)],
-  patch: [],
-  remove: []
+  create: [globalHooks.errorIfReadonly, validateSchema(serviceSchema)],
+  update: [globalHooks.errorIfReadonly, validateSchema(serviceSchema)],
+  patch: [globalHooks.errorIfReadonly],
+  remove: [globalHooks.errorIfReadonly]
 };
 
 exports.after = {

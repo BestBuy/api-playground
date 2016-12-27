@@ -1,5 +1,7 @@
-var Ajv = require('ajv');
-var errors = require('feathers-errors');
+'use strict';
+
+const Ajv = require('ajv');
+const errors = require('feathers-errors');
 
 function formatErrorMessage (err) {
   if (err.dataPath) {

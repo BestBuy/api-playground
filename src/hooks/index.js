@@ -1,10 +1,6 @@
 'use strict';
 
-// Add any common hooks you want to share across services in here.
-//
-// Below is an example of how a hook is written and exported. Please
-// see http://docs.feathersjs.com/hooks/readme.html for more details
-// on hooks.
+const errors = require('feathers-errors');
 
 exports.allowNull = function (options) {
   // convert all strings that are "null" to null
@@ -35,4 +31,11 @@ exports.wildcardsInLike = function (options) {
       if (q[key].$notLike) q[key].$notLike = q[key].$notLike.replace(/\*/g, '%');
     });
   };
+};
+
+exports.errorIfReadonly = function (hook, next) {
+  if (hook.app.get('readonly')) {
+    return next(new errors.MethodNotAllowed('This HTTP method is not allowed when application is in read-only mode.'));
+  }
+  return next();
 };

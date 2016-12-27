@@ -8,10 +8,10 @@ exports.before = {
   all: [],
   find: [includeAssociatedModels, findbyCategoryName, findCategoryById, globalHooks.allowNull(), globalHooks.wildcardsInLike()],
   get: [includeAssociatedModels],
-  create: [validateSchema(productSchema)],
-  update: [validateSchema(productSchema)],
-  patch: [],
-  remove: []
+  create: [globalHooks.errorIfReadonly, validateSchema(productSchema)],
+  update: [globalHooks.errorIfReadonly, validateSchema(productSchema)],
+  patch: [globalHooks.errorIfReadonly],
+  remove: [globalHooks.errorIfReadonly]
 };
 
 exports.after = {
