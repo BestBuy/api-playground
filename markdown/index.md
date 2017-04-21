@@ -24,7 +24,7 @@ The API can also be explored via a [Postman Collection](https://www.getpostman.c
 * Import the collection from this URL: [/postman/API.postman_collection.json](/postman/API.postman_collection.json)
 
 ### Querying the API
-* Check out our [Example Queries](queries) to get an idea of whats possible.
+* Check out our [Example Queries](queries.md) to get an idea of whats possible.
 * All querystrings on GET requests are parsed using [qs](http://npmjs.com/packages/qs) to turn them into JSON.
 * Nearly all the [Sequelize Operators](http://docs.sequelizejs.com/en/latest/docs/querying/#operators) are supported.
   * Use `*` instead of `%` for the `$like` Operators
