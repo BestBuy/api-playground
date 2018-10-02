@@ -62,7 +62,7 @@ __[Postman](https://www.getpostman.com/)__
 
 Writing an API is only half the challenge, and consuming it is the other half. Within API Playground we include a [Postman Collection](https://www.getpostman.com/docs/collections) that helps developers learn how to interact with the API Playground for all CRUD operations and a couple interesting API operations. Another great aspect of Postman is the [generate code](https://www.getpostman.com/docs/creating_curl) functionality, which leads to repeatable  cURL commands as well as usable code in most popular languages.
 
-__[GeoNames](https://www.getpostman.com/)__
+__[GeoNames](https://www.geonames.org/)__
 
 GeoNames has been around since 2002 and provides many useful datasets to help people make meaningful products. Particularly relevant to API Playground is their [postal code service](http://www.geonames.org/postal-codes/postal-codes-us.html), which enables this API to do semi-accurate location searching.
 
