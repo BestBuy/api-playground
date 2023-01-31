@@ -17,7 +17,7 @@ const { darkspark, darksparkVerify } = require("darkspark-expressjs-plug");
 
 
 const app = feathers();
-darkspark(app, "key-657358e8f78e6f0a1cf382643ba80d33bbbdb1b3901e881dfcf0a1c417e5b916");
+darkspark(app, "key");
 
 app.configure(configuration(path.join(__dirname, '..')));
 
