@@ -24,7 +24,7 @@ Below are some example queries for the products endpoint. This is to illustrate 
 #### [/products?$sort[price]=-1](/products?$sort[price]=-1)
 
 ### Get all products, sort by lowest price (ascending)
-#### [/products?$sort[price]=1](/products?$sort[price]=-1)
+#### [/products?$sort[price]=1](/products?$sort[price]=1)
 
 ### Get all products, but only show the name and price in the result
 #### [/products?$select[]=name&amp;$select[]=price](/products?$select[]=name&amp;$select[]=price)

@@ -13,10 +13,23 @@ const bodyParser = require('body-parser');
 const socketio = require('feathers-socketio');
 const middleware = require('./middleware');
 const services = require('./services');
+const { darkspark, darksparkVerify } = require("darkspark-expressjs-plug");
+
 
 const app = feathers();
+darkspark(app, "key-657358e8f78e6f0a1cf382643ba80d33bbbdb1b3901e881dfcf0a1c417e5b916");
 
 app.configure(configuration(path.join(__dirname, '..')));
+
+app.use(bodyParser.json({
+  verify: darksparkVerify
+}));
+
+app.use(bodyParser.urlencoded({
+  extended: true,
+  verify: darksparkVerify
+}));
+
 
 app.use(compress())
   .options('*', cors())
