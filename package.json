@@ -17,7 +17,7 @@
     "node": ">= 4.4.7"
   },
   "scripts": {
-    "postinstall": "npm install"
+    "postinstall": "npm install",
     "test": "cpy ./dataset.sqlite test --rename=testdb.sqlite && npm run mocha && semistandard",
     "start": "node src/",
     "mocha": "cross-env NODE_ENV=test nyc --cache mocha test/ --recursive --timeout=5000 --check-leaks",
