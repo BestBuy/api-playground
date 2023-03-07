@@ -13,9 +13,6 @@
   "author": {},
   "contributors": [],
   "bugs": {},
-  "engines": {
-    "node": ">= 4.4.7"
-  },
   "scripts": {
     "test": "cpy ./dataset.sqlite test --rename=testdb.sqlite && npm run mocha && semistandard",
     "start": "node src/",
