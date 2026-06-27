@@ -76,7 +76,7 @@ module.exports = {
     '/services/{id}': {
       'get': {
         tags: ['services'],
-        'description': 'Returns a services based on service ID',
+        'description': 'Returns a service based on service ID',
         'operationId': 'findServiceById',
         'produces': [
           'application/json'
@@ -108,7 +108,7 @@ module.exports = {
       },
       'patch': {
         tags: ['services'],
-        'description': 'Updates a services based on service ID',
+        'description': 'Updates a service based on service ID',
         'operationId': 'updateServiceById',
         'produces': [
           'application/json'
