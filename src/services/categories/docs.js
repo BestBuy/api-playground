@@ -76,7 +76,7 @@ module.exports = {
     '/categories/{id}': {
       'get': {
         tags: ['categories'],
-        'description': 'Returns a categories based on category ID',
+        'description': 'Returns a category based on category ID',
         'operationId': 'findCategoryById',
         'produces': [
           'application/json'
@@ -108,7 +108,7 @@ module.exports = {
       },
       'patch': {
         tags: ['categories'],
-        'description': 'Updates a categories based on category ID',
+        'description': 'Updates a category based on category ID',
         'operationId': 'updateCategoryById',
         'produces': [
           'application/json'
